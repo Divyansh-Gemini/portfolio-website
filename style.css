@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400&family=Josefin+Sans:wght@400;500;600;700&family=Lemonada:wght@500&display=swap');
+
+/*
+Font-families:
+        Logo             :  'Lemonada', cursive         :             500
+        Description      :  'Assistant', sans-serif     : 300   400
+        Text & Main head :  'Josefin Sans', sans-serif  :       400   500   600   700    */
+
+        
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #D9D9D9;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+.header{
+    background-color: white;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-set img{
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.logo{
+    font-family: 'Lemonada', cursive;
+    font-size: 200%;
+    align-self: center;
+    cursor: pointer;
+}
+
+.red{
+    color: #C00000;
+}
+
+.nav-btn{
+    background-color: #C00000;
+    color: white;
+    padding: 10% 25%;
+    border-radius: 20px;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.nav-btn:hover{
+    background-color: rgb(54, 0, 0);
+    transition: ease-in-out 0.5s;
+}
+
+.ban-sec{
+    background-image: url("Assets/banner.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 90vh;
+}
+
+.ban-sec-content{
+    display: flex;
+    height: 80vh;
+}
+
+.l1{
+    width: 42%;
+}
+
+.r1{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 140%;
+}
+
+.em-div{
+    height: 10%;
+    width: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.expand-more{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation: mover 1s infinite  alternate;
+}
+
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+main{
+    padding: 0 10%;
+}
+
+section{
+    padding: 2% 0;
+}
+
+.ban-img{
+    width: 100%;
+}
+
+hr{
+    margin: 2% 0;
+}
+
+.head{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    margin: 2% 0;
+}
+
+.desc{
+    font-family: 'Assistant', sans-serif;
+    font-weight: 400;
+}
+
+ul
+{
+    margin-left: 2%;
+}
+
+.last{
+    padding: 5% 5%;
+}
+
+.footer{
+    color: white;
+    /* background-color: #D22552; */
+    background-image: url(Assets/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    bottom: 0;
+    height: 400px;
+    padding: 3% 5%;
+}
+
+
+/* contact.html */
+.contact{
+    text-align: center;
+}
