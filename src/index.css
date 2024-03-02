@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "FiraCode";
+  src: url("/src/assets/fonts/fira_code-variable_font_weight.ttf")
+    format("truetype");
+}
+
+:root {
+  --background: #282c33;
+  --gray: #abb2bf;
+  --primary: #c778dd;
+  --white: #ffffff;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: var(--primary);
+}
+
+::selection {
+  color: white;
+  background: var(--primary);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "FiraCode", monospace;
+  background-color: var(--background);
+  color: var(--white);
+  font-weight: 400;
+}
