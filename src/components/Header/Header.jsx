@@ -8,7 +8,14 @@ const Header = () => {
         className="flex items-center justify-between w-3/4 mx-auto py-8"
         style={{ height: "70px" }}
       >
-        <span className="text-white cursor-pointer">Divyansh Gemini</span>
+        <a href="/">
+          <span
+            className="text-white"
+            style={{ cursor: "var(--cursor-pointer)" }}
+          >
+            Divyansh Gemini
+          </span>
+        </a>
         <nav>
           <ul className="flex">
             <NavItem text="home" />

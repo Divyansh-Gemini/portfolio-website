@@ -1,10 +1,14 @@
 import React from "react";
 
-const NavItem = (props) => {
+const NavItem = ({ text = "heading" }) => {
+  const hrefValue = text === "home" ? "/" : "#" + text;
+
   return (
-    <li className="mx-4 cursor-pointer">
-      <span className="text-[var(--primary)]">#</span>
-      <span className="text-[var(--gray)] hover:text-white">{props.text}</span>
+    <li className="mx-4" style={{ cursor: "var(--cursor-pointer)" }}>
+      <a href={hrefValue} style={{ cursor: "var(--cursor-pointer)" }}>
+        <span className="text-[var(--primary)]">#</span>
+        <span className="text-[var(--gray)] hover:text-white">{text}</span>
+      </a>
     </li>
   );
 };
