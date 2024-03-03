@@ -1,26 +1,32 @@
 import React from "react";
 import Icon from "@mdi/react";
 import { mdiRayStartArrow } from "@mdi/js";
+import { Link } from "react-scroll";
 
 const Heading = ({ text = "heading", width = "1/4", viewAll = false }) => {
   return (
-    <div className="flex items-center">
-      <a href={`#${text}`} id={`#${text}`}>
-        <h1 style={{ cursor: "var(--cursor-pointer)" }}>
+    <div id={`${text}`} className="flex items-center mb-20">
+      <Link
+        activeClass="active"
+        to={text}
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={500}
+        className="cursor-[var(--cursor-pointer)]"
+      >
+        <h1>
           <span className="text-[var(--primary)] text-2xl">#</span>
           <span className="text-white text-2xl">{text}</span>
         </h1>
-      </a>
+      </Link>
 
       <hr
-        className={`border-t-2 border-[var(--primary)] flex-shrink-0 ms-4 w-${width}`}
+        className={`border-t-2 border-[var(--primary)] flex-shrink ms-4 w-${width}`}
       />
 
       {viewAll && (
-        <div
-          className="flex gap-5 ms-auto"
-          style={{ cursor: "var(--cursor-pointer)" }}
-        >
+        <div className="flex gap-5 ms-auto cursor-[var(--cursor-pointer)]">
           <span>view all</span>
           <Icon path={mdiRayStartArrow} size={1} color="white" />
         </div>
