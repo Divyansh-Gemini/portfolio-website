@@ -4,7 +4,7 @@ import SocialIcon from "./SocialIcon";
 
 const Footer = () => {
   return (
-    <footer className="">
+    <footer className="mt-20">
       <hr className="w-full border-t-2 border-[var(--gray)]" />
       <div className="w-3/4 mx-auto my-10 text-justify">
         <div>
@@ -14,11 +14,10 @@ const Footer = () => {
               <div className="flex gap-10">
                 <span>Divyansh Gemini</span>
                 <a
-                  className="text-[var(--gray)]"
+                  className="text-[var(--gray)] cursor-[var(--cursor-pointer)]"
                   href="mailto:divyanshgemini3232@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ cursor: "var(--cursor-pointer)" }}
                 >
                   divyanshgemini3232@gmail.com
                 </a>

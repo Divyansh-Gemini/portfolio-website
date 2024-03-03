@@ -5,7 +5,7 @@ const AboutMeSection = () => {
   return (
     <div>
       <Heading text="about me" />
-      {/* AboutMeSection */}
+      {/* AboutMeSection   */}
     </div>
   );
 };

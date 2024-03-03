@@ -5,17 +5,12 @@ const SocialIcon = ({ social = "", url = "#" }) => {
   const iconSrc = `src/assets/icons/${social}.svg`;
 
   return (
-    <a
-      href={url}
-      target="_blank"
-      rel="noopener noreferrer"
-      style={{ cursor: "var(--cursor-pointer)" }}
-    >
+    <a href={url} target="_blank" rel="noopener noreferrer">
       <Icon
         path={social}
         size={1}
         color="#abb2bf"
-        className="hover:brightness-0 hover:invert"
+        className="hover:brightness-0 hover:invert cursor-[var(--cursor-pointer)]"
       />
     </a>
   );

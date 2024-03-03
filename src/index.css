@@ -27,7 +27,7 @@
 }
 
 ::selection {
-  color: white;
+  color: var(--background);
   background: var(--primary);
 }
 

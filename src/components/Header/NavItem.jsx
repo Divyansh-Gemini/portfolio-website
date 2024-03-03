@@ -1,14 +1,23 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 const NavItem = ({ text = "heading" }) => {
-  const hrefValue = text === "home" ? "/" : "#" + text;
-
   return (
-    <li className="mx-4" style={{ cursor: "var(--cursor-pointer)" }}>
-      <a href={hrefValue} style={{ cursor: "var(--cursor-pointer)" }}>
+    <li className="mx-4 cursor-[var(--cursor-pointer)] text-lg">
+      <Link
+        activeClass=""
+        to={text}
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={500}
+        style={{ cursor: "var(--cursor-pointer)" }}
+      >
         <span className="text-[var(--primary)]">#</span>
-        <span className="text-[var(--gray)] hover:text-white">{text}</span>
-      </a>
+        <span className="text-[var(--gray)] hover:text-white transition duration-200">
+          {text}
+        </span>
+      </Link>
     </li>
   );
 };
