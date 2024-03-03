@@ -9,10 +9,15 @@
 }
 
 :root {
+  /* colors */
   --background: #282c33;
   --gray: #abb2bf;
   --primary: #c778dd;
   --white: #ffffff;
+
+  /* cursors */
+  --cursor-pointer: url("/src/assets/images/cursor-pointer.svg"), pointer;
+  --cursor-default: url("/src/assets/images/cursor-default.svg"), default;
 }
 
 ::-moz-selection {
@@ -37,4 +42,5 @@ body {
   background-color: var(--background);
   color: var(--white);
   font-weight: 400;
+  cursor: var(--cursor-default);
 }

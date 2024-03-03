@@ -1,5 +1,6 @@
 import React from "react";
-import Icon from "./Icon";
+import { mdiGithub, mdiLinkedin, mdiTwitter } from "@mdi/js";
+import SocialIcon from "./SocialIcon";
 
 const Footer = () => {
   return (
@@ -17,6 +18,7 @@ const Footer = () => {
                   href="mailto:divyanshgemini3232@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
+                  style={{ cursor: "var(--cursor-pointer)" }}
                 >
                   divyanshgemini3232@gmail.com
                 </a>
@@ -28,16 +30,16 @@ const Footer = () => {
             <div>
               <span style={{ fontSize: "1.5rem" }}>Socials</span>
               <div className="flex gap-3 mt-2">
-                <Icon
-                  social="GitHub"
+                <SocialIcon
+                  social={mdiGithub}
                   url="https://github.com/Divyansh-Gemini"
                 />
-                <Icon
-                  social="LinkedIn"
+                <SocialIcon
+                  social={mdiLinkedin}
                   url="https://www.linkedin.com/in/divyansh-gemini/"
                 />
-                <Icon
-                  social="Twitter"
+                <SocialIcon
+                  social={mdiTwitter}
                   url="https://twitter.com/DivyanshGemini"
                 />
               </div>
