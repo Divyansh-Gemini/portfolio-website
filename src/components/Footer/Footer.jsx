@@ -14,7 +14,7 @@ const Footer = () => {
               <div className="flex gap-10">
                 <span>Divyansh Gemini</span>
                 <a
-                  className="text-[var(--gray)] cursor-[var(--cursor-pointer)]"
+                  className="text-[var(--gray)] cursor-[var(--cursor-pointer)] hover:underline"
                   href="mailto:divyanshgemini3232@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"

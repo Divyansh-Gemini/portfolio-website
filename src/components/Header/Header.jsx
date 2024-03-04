@@ -17,8 +17,8 @@ const Header = () => {
         duration={500}
         style={{ cursor: "var(--cursor-pointer)" }}
       >
-        <span className="text-white cursor-[var(--cursor-pointer)] text-2xl font-medium">
-          Divyansh Gemini
+        <span className="text-white cursor-[var(--cursor-pointer)] text-xl font-medium">
+          {"{Divyansh Gemini}"}
         </span>
       </Link>
       <nav>
