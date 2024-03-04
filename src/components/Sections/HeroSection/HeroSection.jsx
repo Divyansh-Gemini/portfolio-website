@@ -27,7 +27,8 @@ const HeroSection = () => {
             text="Download Resume"
             type="anchor"
             styling="outlined"
-            src="#"
+            src="/resume.pdf"
+            isDownloadable={true}
           />
 
           {/* Contact Btn */}
