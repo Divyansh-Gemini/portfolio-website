@@ -26,7 +26,7 @@ const ProjectCard = ({
         ))}
       </div>
 
-      <div className="p-2">
+      <div className="p-2 h-full">
         {/* project title */}
         <h2 className="text-xl">{title}</h2>
 
@@ -35,8 +35,6 @@ const ProjectCard = ({
 
         {/* buttons */}
         <div className="flex gap-5 mt-2">
-          {/* <Button text="Code" type="filled" /> */}
-          {/* <Button text="Live" type="outlined" /> */}
           <Button text="Code" type="anchor" styling="filled" src={codeURL} />
           <Button text="Live" type="anchor" styling="outlined" src={liveURL} />
         </div>

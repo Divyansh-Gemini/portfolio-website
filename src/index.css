@@ -18,6 +18,7 @@
   /* cursors */
   --cursor-pointer: url("/src/assets/images/cursor-pointer.svg"), pointer;
   --cursor-default: url("/src/assets/images/cursor-default.svg"), default;
+  --cursor-text: url("/src/assets/images/cursor-text.svg"), text;
 }
 
 ::-moz-selection {
@@ -43,4 +44,17 @@ body {
   color: var(--white);
   font-weight: 400;
   cursor: var(--cursor-default);
+}
+
+label {
+  cursor: var(--cursor-default);
+}
+
+input,
+textarea {
+  cursor: var(--cursor-text);
+}
+
+input[type="submit"] {
+  cursor: var(--cursor-pointer);
 }

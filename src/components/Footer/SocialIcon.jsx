@@ -2,8 +2,6 @@ import React from "react";
 import Icon from "@mdi/react";
 
 const SocialIcon = ({ social = "", url = "#" }) => {
-  const iconSrc = `src/assets/icons/${social}.svg`;
-
   return (
     <a href={url} target="_blank" rel="noopener noreferrer">
       <Icon
