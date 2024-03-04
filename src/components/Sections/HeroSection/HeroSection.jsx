@@ -1,13 +1,12 @@
 import React from "react";
 import { Link } from "react-scroll";
-import { mdiChevronDownCircleOutline } from "@mdi/js";
-import Icon from "@mdi/react";
+import Button from "../../Button";
 
 const HeroSection = () => {
   return (
     <section
       id="home"
-      className="flex items-center gap-10 justify-between h-screen -mb-10"
+      className="flex items-center gap-10 justify-between h-screen -mb-32"
     >
       {/* left */}
       <div className="flex flex-col justify-center gap-10 w-7/12 items-start text-start">
@@ -22,22 +21,23 @@ const HeroSection = () => {
           I craft responsive apps & websites where technology meets creativity.
         </span>
 
-        <Link
-          activeClass="active"
-          to="contact"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-          style={{ cursor: "var(--cursor-pointer)" }}
-        >
-          <button
-            className="rounded-xl inline-block px-4 py-2 border border-[var(--primary)] hover:bg-[var(--primary)] 
-            hover:text-[var(--background)] hover:font-semibold transition duration-200 cursor-[var(--cursor-pointer)]"
-          >
-            Contact me !!
-          </button>
-        </Link>
+        <div className="flex justify-start gap-10">
+          {/* Download Resume Btn */}
+          <Button
+            text="Download Resume"
+            type="anchor"
+            styling="outlined"
+            src="#"
+          />
+
+          {/* Contact Btn */}
+          <Button
+            text="Contact me !!"
+            type="scroll"
+            styling="filled"
+            src="contact"
+          />
+        </div>
       </div>
 
       {/* right */}
