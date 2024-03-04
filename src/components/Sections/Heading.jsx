@@ -3,9 +3,9 @@ import Icon from "@mdi/react";
 import { mdiRayStartArrow } from "@mdi/js";
 import { Link } from "react-scroll";
 
-const Heading = ({ text = "heading", width = "1/4", viewAll = false }) => {
+const Heading = ({ text = "heading", width, viewAll = false }) => {
   return (
-    <div id={`${text}`} className="flex items-center mb-20">
+    <div id={`${text}`} className="flex items-center mt-20 mb-10">
       <Link
         activeClass="active"
         to={text}
