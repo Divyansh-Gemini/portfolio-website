@@ -1,8 +1,7 @@
 import React from "react";
 import NavItem from "./NavItem";
 import { Link as ScrollLink } from "react-scroll";
-import { useLocation } from "react-router-dom";
-import { Link as RouterLink } from "react-router-dom";
+import { Link as RouterLink, useLocation } from "react-router-dom";
 
 const Header = () => {
   const location = useLocation();
@@ -37,11 +36,16 @@ const Header = () => {
       <nav>
         <ul className="flex">
           <NavItem text="home" />
-          {location.pathname === "/" && (
+          {location.pathname === "/" ? (
             <>
               <NavItem text="projects" />
               <NavItem text="skills" />
               <NavItem text="contact" />
+            </>
+          ) : (
+            <>
+              <NavItem text="complete-apps" />
+              <NavItem text="small-projects" />
             </>
           )}
         </ul>
