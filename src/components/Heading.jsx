@@ -2,10 +2,12 @@ import React from "react";
 import Icon from "@mdi/react";
 import { mdiRayStartArrow } from "@mdi/js";
 import { Link } from "react-scroll";
+import { NavLink } from "react-router-dom";
 
 const Heading = ({ text = "heading", width, viewAll = false }) => {
   return (
     <div id={`${text}`} className="flex items-center mt-20 mb-10">
+      {/* main heading text */}
       <Link
         activeClass="active"
         to={text}
@@ -21,15 +23,20 @@ const Heading = ({ text = "heading", width, viewAll = false }) => {
         </h1>
       </Link>
 
+      {/* horizontal line */}
       <hr
-        className={`border-t-2 border-[var(--primary)] flex-shrink ms-4 w-${width}`}
+        className={`border-t-2 border-[var(--primary)] flex-shrink ms-4 w-${width} h-0`}
       />
 
+      {/* view all */}
       {viewAll && (
-        <div className="flex gap-5 ms-auto cursor-[var(--cursor-pointer)]">
+        <NavLink
+          to={`/${text}`}
+          className="flex gap-5 ms-auto cursor-[var(--cursor-pointer)]"
+        >
           <span>view all</span>
           <Icon path={mdiRayStartArrow} size={1} color="white" />
-        </div>
+        </NavLink>
       )}
     </div>
   );

@@ -9,12 +9,12 @@ import ContactSection from "../components/Sections/ContactSection/ContactSection
 
 const HomePage = () => {
   return (
-    <main className="text-justify w-3/4 mx-auto">
+    <>
       <HeroSection />
       <ProjectsSection />
       <SkillsSection />
       <ContactSection />
-    </main>
+    </>
   );
 };
 
