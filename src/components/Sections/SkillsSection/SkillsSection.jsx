@@ -7,7 +7,7 @@ const SkillsSection = () => {
     <div>
       <Heading text="skills" width="1/4" />
 
-      <div className="grid grid-cols-6 gap-14 items-center">
+      <div className="grid grid-cols-6 gap-y-14 justify-items-center">
         <LogoImg tech="HTML" />
         <LogoImg tech="CSS" />
         <LogoImg tech="JavaScript" />

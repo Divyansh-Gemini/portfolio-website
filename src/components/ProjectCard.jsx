@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../../Button";
+import Button from "./Button";
 
 const ProjectCard = ({
   title,
@@ -26,7 +26,7 @@ const ProjectCard = ({
         ))}
       </div>
 
-      <div className="p-2 h-full">
+      <div className="p-2">
         {/* project title */}
         <h2 className="text-xl">{title}</h2>
 
@@ -36,7 +36,7 @@ const ProjectCard = ({
         {/* buttons */}
         <div className="flex gap-5 mt-2">
           <Button text="Code" type="anchor" styling="filled" src={codeURL} />
-          <Button text="Live" type="anchor" styling="outlined" src={liveURL} />
+          <Button text="View" type="anchor" styling="outlined" src={liveURL} />
         </div>
       </div>
     </div>

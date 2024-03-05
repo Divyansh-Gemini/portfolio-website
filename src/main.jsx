@@ -5,11 +5,19 @@ import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import HomePage from "./pages/HomePage.jsx";
 import ProjectsPage from "./pages/ProjectsPage.jsx";
+import NotFoundPage from "./pages/NotFoundPage.jsx";
+import Header from "./components/Header/Header.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: (
+      <>
+        <Header />
+        <NotFoundPage />
+      </>
+    ),
     children: [
       {
         path: "/",

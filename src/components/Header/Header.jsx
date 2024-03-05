@@ -44,7 +44,7 @@ const Header = () => {
             </>
           ) : (
             <>
-              <NavItem text="complete-apps" />
+              <NavItem text="major-projects" />
               <NavItem text="small-projects" />
             </>
           )}

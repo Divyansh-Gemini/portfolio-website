@@ -6,8 +6,11 @@ import ProjectsSection from "../components/Sections/ProjectsSection/ProjectsSect
 import AboutMeSection from "../components/Sections/AboutMeSection/AboutMeSection";
 import SkillsSection from "../components/Sections/SkillsSection/SkillsSection";
 import ContactSection from "../components/Sections/ContactSection/ContactSection";
+import { animateScroll } from "react-scroll";
 
 const HomePage = () => {
+  animateScroll.scrollToTop();
+
   return (
     <>
       <HeroSection />
