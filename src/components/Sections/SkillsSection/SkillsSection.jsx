@@ -11,7 +11,7 @@ const SkillsSection = () => {
         <LogoImg tech="HTML" />
         <LogoImg tech="CSS" />
         <LogoImg tech="JavaScript" />
-        <LogoImg tech="React" />
+        <LogoImg tech="ReactJS" />
         <LogoImg tech="TailwindCSS" />
         <LogoImg tech="NodeJS" />
         <LogoImg tech="Android" />
