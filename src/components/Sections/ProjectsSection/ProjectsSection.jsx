@@ -1,6 +1,6 @@
 import React from "react";
 import Heading from "../../Heading";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "../../ProjectCard.jsx";
 
 const ProjectsSection = () => {
   return (
@@ -9,7 +9,7 @@ const ProjectsSection = () => {
 
       <div className="flex justify-between">
         <ProjectCard
-          imgSrc="/src/assets/images/project-img-1.png"
+          imgSrc="/src/assets/images/project-banners/project-portfolio.png"
           title="Portfolio Website"
           techStack={["React.js", "TailwindCSS"]}
           description="The website you are currently on."
@@ -18,7 +18,7 @@ const ProjectsSection = () => {
         />
 
         <ProjectCard
-          imgSrc="/src/assets/images/project-img-3.png"
+          imgSrc="/src/assets/images/project-banners/project-img-3.png"
           title="Pre-Import & Export Inspection Services"
           techStack={["Android", "Java", "Python", "SQLite"]}
           description="Android app for CIC Labs India."
@@ -27,7 +27,7 @@ const ProjectsSection = () => {
         />
 
         <ProjectCard
-          imgSrc="/src/assets/images/project-img-2.png"
+          imgSrc="/src/assets/images/project-banners/project-img-2.png"
           title="CarePlus"
           techStack={["Android", "Java", "Firebase"]}
           description="Medication tracker & reminder Android app."

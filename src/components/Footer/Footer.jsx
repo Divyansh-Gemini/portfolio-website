@@ -1,5 +1,5 @@
 import React from "react";
-import { mdiGithub, mdiLinkedin, mdiTwitter } from "@mdi/js";
+import { mdiGithub, mdiLinkedin, mdiStackOverflow, mdiTwitter } from "@mdi/js";
 import SocialIcon from "./SocialIcon";
 
 const Footer = () => {
@@ -40,6 +40,10 @@ const Footer = () => {
                 <SocialIcon
                   social={mdiTwitter}
                   url="https://twitter.com/DivyanshGemini"
+                />
+                <SocialIcon
+                  social={mdiStackOverflow}
+                  url="https://stackoverflow.com/users/19415431/divyansh-gemini"
                 />
               </div>
             </div>
