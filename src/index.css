@@ -2,12 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Font ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @font-face {
   font-family: "FiraCode";
   src: url("/src/assets/fonts/fira_code-variable_font_weight.ttf")
     format("truetype");
 }
-
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Variables ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 :root {
   /* colors */
   --background: #282c33;
@@ -16,11 +17,14 @@
   --white: #ffffff;
 
   /* cursors */
-  --cursor-pointer: url("/src/assets/images/cursor-pointer.svg"), pointer;
-  --cursor-default: url("/src/assets/images/cursor-default.svg"), default;
-  --cursor-text: url("/src/assets/images/cursor-text.svg"), text;
+  --cursor-pointer: url("/src/assets/images/cursors/cursor-pointer.svg"),
+    pointer;
+  --cursor-default: url("/src/assets/images/cursors/cursor-default.svg"),
+    default;
+  --cursor-text: url("/src/assets/images/cursors/cursor-text.svg"), text;
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Text Selection ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 ::-moz-selection {
   /* Code for Firefox */
   color: white;
@@ -32,6 +36,7 @@
   background: var(--primary);
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Other Common Styles ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 * {
   margin: 0;
   padding: 0;
@@ -57,4 +62,42 @@ textarea {
 
 input[type="submit"] {
   cursor: var(--cursor-pointer);
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Custom Scroll Bar for webpage ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--background);
+  border-radius: 100px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--gray);
+  border-radius: 100px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #bfa9c6;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Custom Scroll Bar for text-area ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+textarea::-webkit-scrollbar {
+  width: 8px;
+}
+
+textarea::-webkit-scrollbar-track {
+  background-color: var(--gray);
+  border-radius: 100px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: #393c40;
+  border-radius: 100px;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+  background-color: #bfa9c6;
 }
