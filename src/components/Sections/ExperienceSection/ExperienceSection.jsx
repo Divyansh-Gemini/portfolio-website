@@ -3,10 +3,10 @@ import Heading from "../../Heading";
 
 const ExperienceSection = () => {
   return (
-    <div>
+    <section>
       <Heading text="experience" />
       {/* ExperienceSection */}
-    </div>
+    </section>
   );
 };
 

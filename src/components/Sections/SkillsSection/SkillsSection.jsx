@@ -4,10 +4,10 @@ import LogoImg from "./LogoImg";
 
 const SkillsSection = () => {
   return (
-    <div>
-      <Heading text="skills" width="1/4" />
+    <section className="xl:mb-40">
+      <Heading text="tech-stack" width="1/4" />
 
-      <div className="grid grid-cols-6 gap-y-14 justify-items-center">
+      <div className="grid grid-cols-4 md:grid-cols-6 gap-y-10 justify-items-center">
         <LogoImg tech="HTML" />
         <LogoImg tech="CSS" />
         <LogoImg tech="JavaScript" />
@@ -21,7 +21,7 @@ const SkillsSection = () => {
         <LogoImg tech="GitHub" />
         <LogoImg tech="Firebase" />
       </div>
-    </div>
+    </section>
   );
 };
 

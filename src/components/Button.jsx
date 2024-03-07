@@ -22,7 +22,7 @@ const Button = ({
   const btn = () => {
     return (
       <button
-        className={`border rounded-xl inline-block px-4 py-2 transition duration-200 cursor-[var(--cursor-pointer)] ${btnStyling(
+        className={`border text-sm md:text-lg rounded-xl inline-block px-4 py-1.5 md:x-6 md:py-2 w-full transition duration-200 cursor-[var(--cursor-pointer)] ${btnStyling(
           styling
         )}`}
       >

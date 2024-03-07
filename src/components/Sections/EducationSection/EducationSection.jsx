@@ -3,10 +3,10 @@ import Heading from "../../Heading";
 
 const EducationSection = () => {
   return (
-    <div>
+    <section>
       <Heading text="education" />
       {/* EducationSection */}
-    </div>
+    </section>
   );
 };
 
