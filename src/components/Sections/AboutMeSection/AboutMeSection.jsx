@@ -3,10 +3,10 @@ import Heading from "../../Heading";
 
 const AboutMeSection = () => {
   return (
-    <div>
+    <section>
       <Heading text="about me" />
       {/* AboutMeSection   */}
-    </div>
+    </section>
   );
 };
 

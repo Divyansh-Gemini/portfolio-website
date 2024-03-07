@@ -18,34 +18,34 @@ const ContactSection = () => {
     event.preventDefault();
     setIsSubmitted(true);
 
-    emailjs
-      .sendForm(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        form.current,
-        {
-          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
-        }
-      )
-      .then(
-        () => {
-          console.log("SUCCESS!");
-          form.current.reset();
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
+    // emailjs
+    //   .sendForm(
+    //     import.meta.env.VITE_EMAILJS_SERVICE_ID,
+    //     import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+    //     form.current,
+    //     {
+    //       publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+    //     }
+    //   )
+    //   .then(
+    //     () => {
+    //       console.log("SUCCESS!");
+    //       form.current.reset();
+    //     },
+    //     (error) => {
+    //       console.log("FAILED...", error.text);
+    //     }
+    //   );
   };
 
   return (
-    <div>
+    <section>
       <Heading text="contact" width="1/3" />
 
       <form
         action="#"
         method="post"
-        className="flex flex-col gap-7 w-2/5 mx-auto"
+        className="flex flex-col gap-7 md:w-2/3  xl:w-1/2 mx-auto"
         ref={form}
         onSubmit={sendEmail}
       >
@@ -68,9 +68,9 @@ const ContactSection = () => {
             name="message"
             id="message"
             cols="30"
-            rows="10"
+            rows="7"
             required
-            className="p-2 bg-gray-300 focus:outline-none rounded-lg font-medium text-[var(--background)] 
+            className="p-2 text-sm above-fold:text-base md:text-lg bg-gray-300 focus:outline-none rounded-lg font-medium text-[var(--background)] border-4 border-gray-300
             placeholder-gray-500 focus:placeholder-gray-400 focus:ring-4 focus:ring-purple-600 focus:ring-opacity-30 transition duration-200 resize-none"
             style={{ caretColor: "var(--background)" }}
             placeholder="message..."
@@ -101,7 +101,7 @@ const ContactSection = () => {
           )}
         </div>
       </form>
-    </div>
+    </section>
   );
 };
 

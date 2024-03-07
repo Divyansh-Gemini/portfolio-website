@@ -4,10 +4,11 @@ import ProjectCard from "../../ProjectCard.jsx";
 
 const ProjectsSection = () => {
   return (
-    <div>
+    <section>
       <Heading text="projects" width="1/2" viewAll />
 
-      <div className="flex justify-between">
+      <div className="grid gap-10 2xl:gap-16 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-center above-fold:w-5/6 sm:w-full xl:w-11/12 m-auto xl:mb-40">
+        {/* Portfolio Website */}
         <ProjectCard
           imgSrc="/src/assets/images/project-banners/project-portfolio.png"
           title="Portfolio Website"
@@ -17,25 +18,28 @@ const ProjectsSection = () => {
           liveURL=""
         />
 
+        {/* CIC Labs */}
         <ProjectCard
-          imgSrc="/src/assets/images/project-banners/project-img-3.png"
+          imgSrc="/src/assets/images/project-banners/project-cic.png"
           title="Pre-Import & Export Inspection Services"
           techStack={["Android", "Java", "Python", "SQLite"]}
-          description="Android app for CIC Labs India."
+          // description="Android app for CIC Labs India."
+          description="Android app to digitize making of inspection certifcate by fetching data from Invoice PDF."
           codeURL="https://github.com/Divyansh-Gemini/pre-import-and-export-inspection-services"
-          liveURL=""
+          liveURL="https://github.com/Divyansh-Gemini/pre-import-and-export-inspection-services"
         />
 
+        {/* CarePlus */}
         <ProjectCard
-          imgSrc="/src/assets/images/project-banners/project-img-2.png"
+          imgSrc="/src/assets/images/project-banners/project-careplus.png"
           title="CarePlus"
           techStack={["Android", "Java", "Firebase"]}
-          description="Medication tracker & reminder Android app."
+          description="Medication tracker & reminder app for old-age home."
           codeURL="https://github.com/Divyansh-Gemini/CarePlus"
-          liveURL=""
+          liveURL="https://github.com/Divyansh-Gemini/CarePlus"
         />
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,6 +1,6 @@
 import React from "react";
 import Icon from "@mdi/react";
-import { mdiRayStartArrow } from "@mdi/js";
+import { mdiRayStartArrow, mdiAlphaQBox } from "@mdi/js";
 import { Link } from "react-scroll";
 import { NavLink } from "react-router-dom";
 
@@ -17,9 +17,9 @@ const Heading = ({ text = "heading", width, viewAll = false }) => {
         duration={500}
         className="cursor-[var(--cursor-pointer)]"
       >
-        <h1>
-          <span className="text-[var(--primary)] text-2xl">#</span>
-          <span className="text-white text-2xl">{text}</span>
+        <h1 className="text-xl above-fold:text-2xl">
+          <span className="text-[var(--primary)]">#</span>
+          <span className="text-white">{text}</span>
         </h1>
       </Link>
 
@@ -32,10 +32,15 @@ const Heading = ({ text = "heading", width, viewAll = false }) => {
       {viewAll && (
         <NavLink
           to={`/${text}`}
-          className="flex gap-5 ms-auto cursor-[var(--cursor-pointer)]"
+          className="flex gap-1 above-fold:gap-4 above-fold:ms-auto items-center cursor-[var(--cursor-pointer)]"
         >
-          <span>view all</span>
-          <Icon path={mdiRayStartArrow} size={1} color="white" />
+          <span className="text-xs above-fold:text-base">view all</span>
+          <Icon
+            path={mdiRayStartArrow}
+            size={1}
+            color="white"
+            className="hidden sm:block"
+          />
         </NavLink>
       )}
     </div>

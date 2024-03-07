@@ -1,58 +1,51 @@
 import React from "react";
-import { mdiGithub, mdiLinkedin, mdiStackOverflow, mdiTwitter } from "@mdi/js";
 import SocialIcon from "./SocialIcon";
+import { siGithub, siLinkedin, siStackoverflow, siX } from "simple-icons";
 
 const Footer = () => {
   return (
-    <footer className="mt-20">
-      <hr className="w-full border-t-2 border-[var(--gray)]" />
-      <div className="w-3/4 mx-auto my-10 text-justify">
-        <div>
-          <div className="flex justify-between">
-            {/* left */}
-            <div>
-              <div className="flex gap-10">
-                <span>Divyansh Gemini</span>
-                <a
-                  className="text-[var(--gray)] cursor-[var(--cursor-pointer)] hover:underline"
-                  href="mailto:divyanshgemini3232@gmail.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  divyanshgemini3232@gmail.com
-                </a>
-              </div>
-              <p className="mt-2">Android App Developer</p>
-            </div>
+    // footer
+    <footer className="mt-14 border-t-2 border-[var(--gray)] py-8">
+      {/* parent div (of right & left div) */}
+      <div className="flex flex-col gap-6 md:flex-row justify-between w-3/4 mx-auto">
+        {/* div: about */}
+        <div className="flex flex-col gap-1">
+          <span className="text-base sm:text-xl">Divyansh Gemini</span>
+          <a
+            className="text-sm sm:text-base text-[var(--gray)] cursor-[var(--cursor-pointer)] hover:underline"
+            href="mailto:divyanshgemini3232@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            divyanshgemini3232@gmail.com
+          </a>
+        </div>
 
-            {/* right */}
-            <div>
-              <span style={{ fontSize: "1.5rem" }}>Socials</span>
-              <div className="flex gap-3 mt-2">
-                <SocialIcon
-                  social={mdiGithub}
-                  url="https://github.com/Divyansh-Gemini"
-                />
-                <SocialIcon
-                  social={mdiLinkedin}
-                  url="https://www.linkedin.com/in/divyansh-gemini/"
-                />
-                <SocialIcon
-                  social={mdiTwitter}
-                  url="https://twitter.com/DivyanshGemini"
-                />
-                <SocialIcon
-                  social={mdiStackOverflow}
-                  url="https://stackoverflow.com/users/19415431/divyansh-gemini"
-                />
-              </div>
-            </div>
+        {/* div: socials */}
+        <div>
+          <span className="text-base sm:text-xl">Socials</span>
+          <div className="flex gap-3 mt-2">
+            <SocialIcon
+              social={siGithub}
+              url="https://github.com/Divyansh-Gemini"
+            />
+            <SocialIcon
+              social={siLinkedin}
+              url="https://www.linkedin.com/in/divyansh-gemini/"
+            />
+            <SocialIcon social={siX} url="https://twitter.com/DivyanshGemini" />
+            <SocialIcon
+              social={siStackoverflow}
+              url="https://stackoverflow.com/users/19415431/divyansh-gemini"
+            />
           </div>
         </div>
-        <p className="text-center mt-10 text-[var(--gray)]">
-          Made by Divyansh Gemini
-        </p>
       </div>
+
+      {/* bottom txt */}
+      <span className="flex justify-center text-sm sm:text-base mx-auto mt-10 text-[var(--gray)]">
+        Made by Divyansh Gemini
+      </span>
     </footer>
   );
 };
