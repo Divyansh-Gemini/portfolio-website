@@ -10,6 +10,9 @@ import { siGithub, siLinkedin, siStackoverflow, siX } from "simple-icons";
 const Header = () => {
   const location = useLocation();
   const [isNavVisible, setNavVisible] = useState(false);
+
+  const currentPage = location.pathname;
+  console.log(currentPage);
   const logoStyling =
     "text-white cursor-[var(--cursor-pointer)] font-medium text-base above-fold:text-xl md:max-lg:text-base";
 
@@ -52,13 +55,14 @@ const Header = () => {
       >
         <ul className="flex flex-col gap-3 above-fold:gap-8 md:gap-5 lg:gap-10 md:flex-row max-md:w-screen md:justify-end">
           <NavItem text="home" onClick={() => setNavVisible(false)} />
-          {location.pathname === "/" ? (
+          {currentPage === "/" && (
             <>
               <NavItem text="projects" onClick={() => setNavVisible(false)} />
               <NavItem text="tech-stack" onClick={() => setNavVisible(false)} />
               <NavItem text="contact" onClick={() => setNavVisible(false)} />
             </>
-          ) : (
+          )}
+          {currentPage === "projects" && (
             <>
               <NavItem
                 text="major-projects"
