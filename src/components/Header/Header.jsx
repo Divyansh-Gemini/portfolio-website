@@ -12,7 +12,6 @@ const Header = () => {
   const [isNavVisible, setNavVisible] = useState(false);
 
   const currentPage = location.pathname;
-  console.log(currentPage);
   const logoStyling =
     "text-white cursor-[var(--cursor-pointer)] font-medium text-base above-fold:text-xl md:max-lg:text-base";
 

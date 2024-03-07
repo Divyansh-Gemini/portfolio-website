@@ -1,6 +1,12 @@
 import React from "react";
 import SocialIcon from "./SocialIcon";
-import { siGithub, siLinkedin, siStackoverflow, siX } from "simple-icons";
+import {
+  siGithub,
+  siHackerrank,
+  siLinkedin,
+  siStackoverflow,
+  siX,
+} from "simple-icons";
 
 const Footer = () => {
   return (
@@ -37,6 +43,10 @@ const Footer = () => {
             <SocialIcon
               social={siStackoverflow}
               url="https://stackoverflow.com/users/19415431/divyansh-gemini"
+            />
+            <SocialIcon
+              social={siHackerrank}
+              url="https://www.hackerrank.com/profile/DivyanshGemini"
             />
           </div>
         </div>
