@@ -1,10 +1,8 @@
 import React from "react";
 import HeroSection from "../components/Sections/HeroSection/HeroSection";
-import ExperienceSection from "../components/Sections/ExperienceSection/ExperienceSection";
-import EducationSection from "../components/Sections/EducationSection/EducationSection";
 import ProjectsSection from "../components/Sections/ProjectsSection/ProjectsSection";
-import AboutMeSection from "../components/Sections/AboutMeSection/AboutMeSection";
 import SkillsSection from "../components/Sections/SkillsSection/SkillsSection";
+import CertificationsSection from "../components/Sections/CertificationsSection/CertificationsSection";
 import ContactSection from "../components/Sections/ContactSection/ContactSection";
 import { animateScroll } from "react-scroll";
 
@@ -16,6 +14,7 @@ const HomePage = () => {
       <HeroSection />
       <ProjectsSection />
       <SkillsSection />
+      <CertificationsSection />
       <ContactSection />
     </>
   );

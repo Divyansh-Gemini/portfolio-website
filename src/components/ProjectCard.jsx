@@ -11,7 +11,7 @@ const ProjectCard = ({
 }) => {
   return (
     <div
-      className="flex flex-col rounded-2xl border border-[var(--gray)] commented-max-w-80 text-start
+      className="flex flex-col rounded-2xl border border-[var(--gray)] text-start
         duration-200 ease-in-out transform hover:-translate-y-1 hover:shadow-lg hover:shadow-gray-900 w-full"
     >
       {/* project banner image */}
