@@ -5,7 +5,7 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Font ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @font-face {
   font-family: "FiraCode";
-  src: url("/src/assets/fonts/fira_code-variable_font_weight.ttf")
+  src: url("/assets/fonts/fira_code-variable_font_weight.ttf")
     format("truetype");
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Variables ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -18,11 +18,11 @@
   --white: #ffffff;
 
   /* cursors */
-  --cursor-pointer: url("/src/assets/images/cursors/cursor-pointer.svg"),
+  --cursor-pointer: url("/assets/images/cursors/cursor-pointer.svg"),
     pointer;
-  --cursor-default: url("/src/assets/images/cursors/cursor-default.svg"),
+  --cursor-default: url("/assets/images/cursors/cursor-default.svg"),
     default;
-  --cursor-text: url("/src/assets/images/cursors/cursor-text.svg"), text;
+  --cursor-text: url("/assets/images/cursors/cursor-text.svg"), text;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Text Selection ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */

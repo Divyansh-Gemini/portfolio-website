@@ -24,9 +24,9 @@ const CertificationsSection = () => {
         <CertificationCard
           title="Machine Learning with Python"
           issuer="IBM"
-          image="./src/assets/images/logos/logo-ibm.png"
+          image="/assets/images/logos/logo-ibm.png"
           onClick={() =>
-            openModal("./src/assets/images/certificates/certificate-ml.jpg")
+            openModal("/assets/images/certificates/certificate-ml.jpg")
           }
         />
 
@@ -34,9 +34,9 @@ const CertificationsSection = () => {
         <CertificationCard
           title="Fundamentals of Deep Learning"
           issuer="NVIDIA"
-          image="./src/assets/images/logos/logo-nvidia.png"
+          image="/assets/images/logos/logo-nvidia.png"
           onClick={() =>
-            openModal("./src/assets/images/certificates/certificate-dl.jpg")
+            openModal("/assets/images/certificates/certificate-dl.jpg")
           }
         />
 
@@ -44,10 +44,10 @@ const CertificationsSection = () => {
         <CertificationCard
           title="Android App Development"
           issuer="Ainwik Infotech"
-          image="./src/assets/images/logos/logo-ainwik.png"
+          image="/assets/images/logos/logo-ainwik.png"
           onClick={() =>
             openModal(
-              "./src/assets/images/certificates/certificate-android.jpg"
+              "/assets/images/certificates/certificate-android.jpg"
             )
           }
         />
@@ -56,9 +56,9 @@ const CertificationsSection = () => {
         <CertificationCard
           title="Crash Course on Python"
           issuer="Google"
-          image="./src/assets/images/logos/logo-google.png"
+          image="/assets/images/logos/logo-google.png"
           onClick={() =>
-            openModal("./src/assets/images/certificates/certificate-python.jpg")
+            openModal("/assets/images/certificates/certificate-python.jpg")
           }
         />
       </div>

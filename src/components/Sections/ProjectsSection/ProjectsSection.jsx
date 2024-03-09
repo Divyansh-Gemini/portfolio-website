@@ -10,7 +10,7 @@ const ProjectsSection = () => {
       <div className="grid gap-10 2xl:gap-16 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-center above-fold:w-5/6 sm:w-full xl:w-11/12 m-auto xl:mb-40">
         {/* Portfolio Website */}
         <ProjectCard
-          imgSrc="/src/assets/images/project-banners/project-portfolio.png"
+          imgSrc="/assets/images/project-banners/project-portfolio.png"
           title="Portfolio Website"
           techStack={["React.js", "TailwindCSS"]}
           description="The website you are currently on."
@@ -20,7 +20,7 @@ const ProjectsSection = () => {
 
         {/* CIC Labs */}
         <ProjectCard
-          imgSrc="/src/assets/images/project-banners/project-cic.png"
+          imgSrc="/assets/images/project-banners/project-cic.png"
           title="Pre-Import & Export Inspection Services"
           techStack={["Android", "Java", "Python", "SQLite"]}
           // description="Android app for CIC Labs India."
@@ -31,7 +31,7 @@ const ProjectsSection = () => {
 
         {/* CarePlus */}
         <ProjectCard
-          imgSrc="/src/assets/images/project-banners/project-careplus.png"
+          imgSrc="/assets/images/project-banners/project-careplus.png"
           title="CarePlus"
           techStack={["Android", "Java", "Firebase"]}
           description="Medication tracker & reminder app for old-age home."

@@ -13,7 +13,7 @@ const ProjectsPage = () => {
       <section className="grid gap-10 2xl:gap-16 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-center above-fold:w-5/6 sm:w-full xl:w-11/12 m-auto">
         {/* Portfolio Website */}
         <ProjectCard
-          imgSrc="/src/assets/images/project-banners/project-portfolio.png"
+          imgSrc="/assets/images/project-banners/project-portfolio.png"
           title="Portfolio Website"
           techStack={["React.js", "TailwindCSS"]}
           description="The website you are currently on."
@@ -23,7 +23,7 @@ const ProjectsPage = () => {
 
         {/* CIC Labs */}
         <ProjectCard
-          imgSrc="/src/assets/images/project-banners/project-cic.png"
+          imgSrc="/assets/images/project-banners/project-cic.png"
           title="Pre-Import & Export Inspection Services"
           techStack={["Android", "Java", "Python", "SQLite"]}
           description="Android app for CIC Labs India."
@@ -33,7 +33,7 @@ const ProjectsPage = () => {
 
         {/* CarePlus */}
         <ProjectCard
-          imgSrc="/src/assets/images/project-banners/project-careplus.png"
+          imgSrc="/assets/images/project-banners/project-careplus.png"
           title="CarePlus"
           techStack={["Android", "Java", "Firebase"]}
           description="Medication tracker & reminder app for old-age home."
@@ -47,7 +47,7 @@ const ProjectsPage = () => {
       <section className="grid gap-10 2xl:gap-16 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-center above-fold:w-5/6 sm:w-full xl:w-11/12 m-auto">
         {/* Ease My WhatsApp */}
         <ProjectCard
-          imgSrc="/src/assets/images/project-banners/project-ease-my-whatsapp.png"
+          imgSrc="/assets/images/project-banners/project-ease-my-whatsapp.png"
           title="Ease My WhatsApp"
           techStack={["Android", "Java"]}
           description="The user can send WhatsApp message from the app without saving the contact number."
