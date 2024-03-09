@@ -49,7 +49,7 @@ const HeroSection = () => {
       <div className="flex flex-col">
         <img
           width={400}
-          src="/assets/images/dp-purple-gradient.png"
+          src="/assets/images/profile.png"
           alt="Divyansh Gemini"
           className="w-3/4 self-center"
         />
