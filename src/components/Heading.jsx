@@ -32,7 +32,7 @@ const Heading = ({ text = "heading", width, viewAll = false }) => {
       {viewAll && (
         <NavLink
           to={`/${text}`}
-          className="flex gap-1 above-fold:gap-4 above-fold:ms-auto items-center cursor-[var(--cursor-pointer)]"
+          className="flex gap-1 max-md:underline above-fold:gap-4 above-fold:ms-auto items-center cursor-[var(--cursor-pointer)]"
         >
           <span className="text-xs above-fold:text-base">view all</span>
           <Icon

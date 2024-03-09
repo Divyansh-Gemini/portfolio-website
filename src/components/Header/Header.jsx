@@ -11,6 +11,11 @@ const Header = () => {
   const location = useLocation();
   const [isNavVisible, setNavVisible] = useState(false);
 
+  const showNavStopScroll = (navVisible) => {
+    setNavVisible(navVisible);
+    document.body.style.overflow = navVisible ? "hidden" : "auto";
+  };
+
   const currentPage = location.pathname;
   const logoStyling =
     "text-white cursor-[var(--cursor-pointer)] font-medium text-base above-fold:text-xl md:max-lg:text-base";
@@ -40,7 +45,7 @@ const Header = () => {
 
       {/* hamburger menu icon */}
       <button
-        onClick={() => setNavVisible(!isNavVisible)}
+        onClick={() => showNavStopScroll(!isNavVisible)}
         className="md:hidden"
       >
         <Icon path={mdiMenu} size={1} />
@@ -53,30 +58,39 @@ const Header = () => {
         } md:flex max-md:absolute max-md:bg-[var(--background)] top-14 max-above-fold:w-screen max-md:w-11/12 max-md:h-screen`}
       >
         <ul className="flex flex-col gap-3 above-fold:gap-8 md:gap-5 lg:gap-10 md:flex-row max-md:w-screen md:justify-end">
-          <NavItem text="home" onClick={() => setNavVisible(false)} />
+          <NavItem text="home" onClick={() => showNavStopScroll(false)} />
           {currentPage === "/" && (
             <>
-              <NavItem text="projects" onClick={() => setNavVisible(false)} />
-              <NavItem text="tech-stack" onClick={() => setNavVisible(false)} />
-              <NavItem text="contact" onClick={() => setNavVisible(false)} />
+              <NavItem
+                text="projects"
+                onClick={() => showNavStopScroll(false)}
+              />
+              <NavItem
+                text="tech-stack"
+                onClick={() => showNavStopScroll(false)}
+              />
+              <NavItem
+                text="contact"
+                onClick={() => showNavStopScroll(false)}
+              />
             </>
           )}
           {currentPage === "projects" && (
             <>
               <NavItem
                 text="major-projects"
-                onClick={() => setNavVisible(false)}
+                onClick={() => showNavStopScroll(false)}
               />
               <NavItem
                 text="small-projects"
-                onClick={() => setNavVisible(false)}
+                onClick={() => showNavStopScroll(false)}
               />
             </>
           )}
         </ul>
       </nav>
 
-      {/* div: socials icons */}
+      {/* div: socials icons for small screens */}
       <div
         className={`${
           isNavVisible ? "flex" : "hidden"
@@ -85,22 +99,15 @@ const Header = () => {
         <SocialIcon
           social={siGithub}
           url="https://github.com/Divyansh-Gemini"
-          size={6}
         />
         <SocialIcon
           social={siLinkedin}
           url="https://www.linkedin.com/in/divyansh-gemini/"
-          size={6}
         />
-        <SocialIcon
-          social={siX}
-          url="https://twitter.com/DivyanshGemini"
-          size={6}
-        />
+        <SocialIcon social={siX} url="https://twitter.com/DivyanshGemini" />
         <SocialIcon
           social={siStackoverflow}
           url="https://stackoverflow.com/users/19415431/divyansh-gemini"
-          size={6}
         />
       </div>
     </header>
