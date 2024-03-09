@@ -53,7 +53,7 @@ const HeroSection = () => {
           alt="Divyansh Gemini"
           className="w-3/4 self-center"
         />
-        <div className="flex gap-2 md:w-3/4 self-center items-center border border-[var(--gray)] px-3 py-2">
+        <div className="flex gap-2 md:w-3/4 xl:w-96 self-center items-center border border-[var(--gray)] px-3 py-2">
           <div className="h-2 w-2 md:h-4 md:w-4 bg-[var(--primary)]"></div>
           <span className="text-xs md:text-lg text-[var(--gray)] font-medium">
             Currently working on
