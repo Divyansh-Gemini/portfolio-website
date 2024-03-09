@@ -15,7 +15,7 @@ const ProjectsSection = () => {
           techStack={["React.js", "TailwindCSS"]}
           description="The website you are currently on."
           codeURL="https://github.com/Divyansh-Gemini/portfolio-website"
-          liveURL=""
+          liveURL="https://www.divyanshgemini.dev/"
         />
 
         {/* CIC Labs */}
