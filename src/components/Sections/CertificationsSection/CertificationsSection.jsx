@@ -46,7 +46,9 @@ const CertificationsSection = () => {
           issuer="Ainwik Infotech"
           image="./src/assets/images/logos/logo-ainwik.png"
           onClick={() =>
-            openModal("./src/assets/images/certificates/certificate-ml.jpg")
+            openModal(
+              "./src/assets/images/certificates/certificate-android.jpg"
+            )
           }
         />
 

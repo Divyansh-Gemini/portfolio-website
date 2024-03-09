@@ -9,8 +9,15 @@ const HeroSection = () => {
     >
       {/* text div */}
       <div className="flex flex-col gap-5 items-start">
-        <span className="text-base md:text-3xl font-medium">
+        {/* <span className="text-base md:text-3xl font-medium">
           I'm an
+          <span className="text-[var(--primary)]"> Android App Developer </span>
+        </span> */}
+        <span className="above-fold:text-xl md:text-3xl font-medium">
+          I'm
+          <span className="text-[var(--primary)]"> Divyansh Gemini</span>,
+          <br />
+          an
           <span className="text-[var(--primary)]"> Android App Developer </span>
         </span>
 
