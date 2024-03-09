@@ -5,7 +5,7 @@ const LogoImg = ({ tech }) => {
     <div className="group flex flex-col items-center justify-center">
       <img
         width="100px"
-        src={`/src/assets/images/logos/logo-${tech.toLowerCase()}.svg`}
+        src={`/assets/images/logos/logo-${tech.toLowerCase()}.svg`}
         alt={tech}
         className="rounded-md h-10 w-10 above-fold:h-12 above-fold:w-12 md:h-14 md:w-14 lg:h-16 lg:w-16 duration-200 ease-in-out transform group-hover:-translate-y-1"
       />
