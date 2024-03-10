@@ -1,10 +1,8 @@
 # Personal Portfolio Website
 
 ## Live URL
-
-_Coming Soon..._
+https://www.divyanshgemini.dev/
 
 ## Tech Stack Used
-
 - React.js
 - Tailwind CSS
