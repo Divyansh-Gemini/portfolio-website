@@ -5,6 +5,7 @@ import SkillsSection from "../components/Sections/SkillsSection/SkillsSection";
 import CertificationsSection from "../components/Sections/CertificationsSection/CertificationsSection";
 import ContactSection from "../components/Sections/ContactSection/ContactSection";
 import { animateScroll } from "react-scroll";
+import AchievementsSection from "../components/Sections/AchievementsSection/AchievementsSection";
 
 const HomePage = () => {
   animateScroll.scrollToTop();
@@ -15,6 +16,7 @@ const HomePage = () => {
       <ProjectsSection />
       <SkillsSection />
       <CertificationsSection />
+      <AchievementsSection />
       <ContactSection />
     </>
   );

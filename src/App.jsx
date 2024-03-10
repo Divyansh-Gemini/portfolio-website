@@ -8,6 +8,9 @@ function App() {
   // Vercel Speed Insights
   injectSpeedInsights();
 
+  // enabling scrolling
+  document.body.style.overflow = "auto";
+
   return (
     <>
       <Header />
