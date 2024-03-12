@@ -44,10 +44,10 @@ const Footer = () => {
               social={siStackoverflow}
               url="https://stackoverflow.com/users/19415431/divyansh-gemini"
             />
-            <SocialIcon
+            {/* <SocialIcon
               social={siHackerrank}
               url="https://www.hackerrank.com/profile/DivyanshGemini"
-            />
+            /> */}
           </div>
         </div>
       </div>

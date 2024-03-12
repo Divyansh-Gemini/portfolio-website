@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HeroSection from "../components/Sections/HeroSection/HeroSection";
 import ProjectsSection from "../components/Sections/ProjectsSection/ProjectsSection";
 import SkillsSection from "../components/Sections/SkillsSection/SkillsSection";
@@ -9,6 +9,10 @@ import AchievementsSection from "../components/Sections/AchievementsSection/Achi
 
 const HomePage = () => {
   animateScroll.scrollToTop();
+
+  useEffect(() => {
+    document.title = "Divyansh Gemini | Home";
+  }, []);
 
   return (
     <>

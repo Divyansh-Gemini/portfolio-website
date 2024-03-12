@@ -9,7 +9,12 @@ const CertificationCard = ({ title, issuer, image, onClick }) => {
     >
       <div className="max-md:w-1/4 aspect-square h-full">
         {/* issuer logo */}
-        <img src={image} alt={title} className="md:w-24 h-full rounded-xl" />
+        <img
+          src={image}
+          alt={title}
+          loading="lazy"
+          className="md:w-24 h-full rounded-xl"
+        />
       </div>
 
       {/* certification info */}

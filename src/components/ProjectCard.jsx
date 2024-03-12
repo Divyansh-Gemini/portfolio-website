@@ -1,5 +1,7 @@
 import React from "react";
 import Button from "./Button";
+import ProjectModal from "./ProjectModal";
+import ReactDOM from "react-dom";
 
 const ProjectCard = ({
   title,
@@ -7,15 +9,32 @@ const ProjectCard = ({
   techStack,
   description,
   codeURL,
-  liveURL,
+  viewContentType,
+  viewContent,
+  isMultipleViewContent = false,
 }) => {
+  const [selectedContentMeta, setSelectedContentMeta] = React.useState([]);
+
+  const openModal = (viewContentType, viewContent, isMultipleViewContent) => {
+    setSelectedContentMeta([
+      viewContentType,
+      viewContent,
+      isMultipleViewContent,
+    ]);
+    document.body.style.overflow = "hidden";
+  };
+  const closeModal = () => {
+    setSelectedContentMeta([]);
+    document.body.style.overflow = "auto";
+  };
+
   return (
     <div
       className="flex flex-col rounded-2xl border border-[var(--gray)] text-start
-        duration-200 ease-in-out transform hover:-translate-y-1 hover:shadow-lg hover:shadow-gray-900 w-full"
+        duration-200 ease-in-out hover:-translate-y-1 hover:shadow-lg hover:shadow-gray-900 w-full"
     >
       {/* project banner image */}
-      <img className="rounded-t-2xl" src={imgSrc} alt={title} />
+      <img className="rounded-t-2xl" loading="lazy" src={imgSrc} alt={title} />
 
       {/* tech stack */}
       <div className="flex flex-wrap gap-y-1 gap-x-2 p-2 text-xs above-fold:text-sm md:text-base border-y border-[var(--gray)]">
@@ -47,9 +66,31 @@ const ProjectCard = ({
         {/* buttons */}
         <div className="flex gap-5 mt-2">
           <Button text="Code" type="anchor" styling="filled" src={codeURL} />
-          <Button text="View" type="anchor" styling="outlined" src={liveURL} />
+          {viewContentType && (
+            <Button
+              text="View"
+              styling="outlined"
+              type={viewContentType === "URL" ? "anchor" : undefined}
+              src={viewContentType === "URL" ? viewContent : undefined}
+              onClick={() =>
+                openModal([viewContentType, viewContent, isMultipleViewContent])
+              }
+            />
+          )}
         </div>
       </div>
+
+      {/* calling Modal */}
+      {selectedContentMeta.length > 0 &&
+        ReactDOM.createPortal(
+          <ProjectModal
+            viewContentType={viewContentType}
+            viewContent={viewContent}
+            isMultipleViewContent={isMultipleViewContent}
+            onClose={closeModal}
+          />,
+          document.body
+        )}
     </div>
   );
 };
