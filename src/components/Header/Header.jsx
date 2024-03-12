@@ -22,7 +22,7 @@ const Header = () => {
 
   return (
     <header
-      className="sticky top-0 z-10 h-14 lg:h-16 flex items-center justify-around md:justify-between md:w-3/4 mx-auto bg-[var(--background)]
+      className="sticky top-0 z-20 h-14 lg:h-16 flex items-center justify-around md:justify-between md:w-3/4 mx-auto bg-[var(--background)]
       "
       // bg-red-700 above-fold:bg-orange-600 sm:bg-yellow-600 md:bg-green-700 lg:bg-blue-900 xl:bg-purple-900 2xl:bg-pink-950
     >

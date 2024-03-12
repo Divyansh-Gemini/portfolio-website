@@ -6,6 +6,7 @@ const NotFoundPage = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
+    document.title = "Divyansh Gemini | Not Found";
     navigate("/");
   }, [navigate]);
 

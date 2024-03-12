@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="flex gap-8 above-fold:gap-20 justify-center h-screen -mt-10 max-xl:flex-col xl:items-center"
+      className="flex gap-14 above-fold:gap-20 md:max-lg:gap-40 justify-center min-h-screen -mt-10 max-xl:flex-col xl:items-center"
     >
       {/* text div */}
       <div className="flex flex-col gap-5 items-start">
@@ -51,13 +51,13 @@ const HeroSection = () => {
           width={400}
           src="/assets/images/profile.png"
           alt="Divyansh Gemini"
-          className="w-3/4 self-center"
+          className="w-3/4 self-center rounded-t-3xl -m-5 border-2 border-[var(--gray)]"
         />
-        <div className="flex gap-2 md:w-3/4 xl:w-96 self-center items-center border border-[var(--gray)] px-3 py-2">
+        <div className="flex gap-2 md:w-3/4 xl:w-96 self-center items-center border border-[var(--gray)] px-3 py-2 bg-[var(--background)] z-10">
           <div className="h-2 w-2 md:h-4 md:w-4 bg-[var(--primary)]"></div>
-          <span className="text-xs md:text-lg text-[var(--gray)] font-medium">
-            Currently working on
-            <span className="text-white"> Portfolio</span>
+          <span className="text-xs md:text-base text-[var(--gray)] font-medium">
+            Currently learning
+            <span className="text-white"> Android Jetpack</span>
           </span>
         </div>
       </div>

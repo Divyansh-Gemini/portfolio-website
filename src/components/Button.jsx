@@ -3,10 +3,11 @@ import { Link } from "react-scroll";
 
 const Button = ({
   text = "Click Me",
-  type = "anchor",
+  type = undefined,
   styling = "outlined",
   src = "",
   isDownloadable = false,
+  onClick,
 }) => {
   // styling for btn
   const btnStyling = (styling) => {
@@ -22,9 +23,12 @@ const Button = ({
   const btn = () => {
     return (
       <button
-        className={`border text-sm md:text-lg rounded-xl inline-block px-4 py-1.5 md:x-6 md:py-2 w-full transition duration-200 cursor-[var(--cursor-pointer)] ${btnStyling(
+        className={`border text-sm md:text-lg rounded-xl inline-block px-4 py-1.5 md:x-6 md:py-2 ${
+          type === "scroll" ? "w-full" : "w-auto"
+        } transition duration-200 cursor-[var(--cursor-pointer)] ${btnStyling(
           styling
-        )}`}
+        )} ${type == null ? "w-auto" : ""}`}
+        onClick={type === undefined ? onClick : undefined}
       >
         {text}
       </button>
@@ -61,6 +65,8 @@ const Button = ({
           {btn()}
         </Link>
       );
+    default:
+      return btn();
   }
 };
 

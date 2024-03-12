@@ -42,6 +42,7 @@ const Modal = ({ images, onClose }) => {
           />
           <div className="h-full above-fold:max-lg:w-11/12">
             <img
+              loading="lazy"
               src={images[currentIndex]}
               alt="Certificate"
               className="mx-auto rounded-lg object-contain w-full sm:h-full"

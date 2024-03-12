@@ -15,7 +15,12 @@ const AchievementCard = ({
         duration-200 ease-in-out transform hover:-translate-y-1 hover:shadow-md hover:shadow-gray-900 p-2"
     >
       <div className="max-md:w-1/4 aspect-square h-full">
-        <img src={image} alt={title} className="md:w-24 h-full rounded-xl" />
+        <img
+          src={image}
+          alt={title}
+          loading="lazy"
+          className="md:w-24 h-full rounded-xl"
+        />
       </div>
 
       {/* achievement info */}

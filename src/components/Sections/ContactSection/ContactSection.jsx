@@ -4,11 +4,7 @@ import InputField from "./InputField";
 import Label from "./Label";
 import emailjs from "@emailjs/browser";
 import Icon from "@mdi/react";
-import {
-  mdiCheck,
-  mdiCheckCircle,
-  mdiCheckboxMarkedCircleAutoOutline,
-} from "@mdi/js";
+import { mdiCheckboxMarkedCircleAutoOutline } from "@mdi/js";
 
 const ContactSection = () => {
   const form = useRef();

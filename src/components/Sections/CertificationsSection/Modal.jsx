@@ -25,6 +25,7 @@ const Modal = ({ imageUrl, onClose }) => {
       >
         {/* certificate image */}
         <img
+          loading="lazy"
           src={imageUrl}
           alt="Certificate"
           className="xxxxlg:h-96 xxxxw-fit h-full mx-auto rounded-lg"
