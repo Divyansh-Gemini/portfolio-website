@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import Heading from "../../Heading";
+import Heading from "../../components/Heading";
 import InputField from "./InputField";
 import Label from "./Label";
 import emailjs from "@emailjs/browser";
@@ -36,7 +36,7 @@ const ContactSection = () => {
 
   return (
     <section>
-      <Heading text="contact" width="1/3" />
+      <Heading text="contact" className="w-1/3" />
 
       <form
         action="#"

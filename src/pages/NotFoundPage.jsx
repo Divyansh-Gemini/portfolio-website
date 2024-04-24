@@ -1,18 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 
 const NotFoundPage = () => {
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    document.title = "Divyansh Gemini | Not Found";
-    navigate("/");
-  }, [navigate]);
-
   return (
     <main className="w-3/4 mx-auto text-center">
-      {navigate("/")}
       {/* Emoji & Text */}
       <div className="flex flex-col gap-14 md:gap-24 mt-44 md:mt-64 xl:mt-52 above-fold:mt-56 w-full h-1/2">
         {/* Face Emoji */}
