@@ -1,5 +1,5 @@
 import React from "react";
-import Heading from "../../components/Heading";
+import Heading from "../../Heading";
 import LogoImg from "./LogoImg";
 
 const SkillsSection = () => {

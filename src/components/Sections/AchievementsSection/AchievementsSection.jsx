@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Heading from "../../components/Heading";
+import Heading from "../../Heading";
 import AchievementCard from "./AchievementCard";
 import Modal from "./Modal";
 

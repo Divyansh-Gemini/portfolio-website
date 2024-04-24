@@ -1,5 +1,5 @@
 import React from "react";
-import LazyImage from "../../components/LazyImage";
+import LazyImage from "../../LazyImage";
 
 const CertificationCard = ({ title, issuer, image, onClick }) => {
   return (
