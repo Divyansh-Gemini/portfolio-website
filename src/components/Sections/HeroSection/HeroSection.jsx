@@ -1,6 +1,6 @@
 import React from "react";
-import Button from "../../components/Button";
-import LazyImage from "../../components/LazyImage";
+import Button from "../../Button";
+import LazyImage from "../../LazyImage";
 
 const HeroSection = () => {
   return (

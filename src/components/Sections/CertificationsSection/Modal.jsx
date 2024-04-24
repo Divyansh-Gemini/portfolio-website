@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import LazyImage from "../../components/LazyImage";
+import LazyImage from "../../LazyImage";
 
 const Modal = ({ imageUrl, height, width, onClose }) => {
   const modalRef = useRef(null);

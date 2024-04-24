@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import Heading from "../../components/Heading";
+import Heading from "../../Heading";
 import InputField from "./InputField";
 import Label from "./Label";
 import emailjs from "@emailjs/browser";

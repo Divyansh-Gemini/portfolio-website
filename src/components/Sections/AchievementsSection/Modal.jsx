@@ -1,7 +1,7 @@
 import Icon from "@mdi/react";
 import React, { useEffect, useRef, useState } from "react";
 import { mdiChevronLeft, mdiChevronRight } from "@mdi/js";
-import LazyImage from "../../components/LazyImage";
+import LazyImage from "../../LazyImage";
 
 const Modal = ({ images, onClose }) => {
   const modalRef = useRef(null);
