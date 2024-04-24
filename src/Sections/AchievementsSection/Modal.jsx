@@ -1,26 +1,35 @@
 import Icon from "@mdi/react";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { mdiChevronLeft, mdiChevronRight } from "@mdi/js";
+import LazyImage from "../../components/LazyImage";
 
 const Modal = ({ images, onClose }) => {
   const modalRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handleCloseOutsideClick = (event) => {
+  useEffect(() => {
+    document.addEventListener("mousedown", closeModal);
+    document.addEventListener("keydown", handleKeyDown);
+  }, []);
+
+  const handleKeyDown = (event) => {
+    if (event.key === "ArrowRight") handleNext();
+    if (event.key === "ArrowLeft") handlePrev();
+    if (event.key === "Escape") onClose();
+  };
+
+  const closeModal = (event) => {
     if (modalRef.current && !modalRef.current.contains(event.target)) onClose();
   };
 
-  React.useEffect(
-    () => document.addEventListener("mousedown", handleCloseOutsideClick),
-    []
-  );
-
   const handleNext = () => {
-    setCurrentIndex((currentIndex + 1) % images.length);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
   const handlePrev = () => {
-    setCurrentIndex((currentIndex - 1 + images.length) % images.length);
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + images.length) % images.length
+    );
   };
 
   return (
@@ -29,7 +38,7 @@ const Modal = ({ images, onClose }) => {
       {/* modal card */}
       <div
         ref={modalRef}
-        className="fixed m-auto flex flex-col max-md:gap-2 justify-between items-center bg-[var(--background)] rounded-xl p-4 w-11/12 sm:w-3/4 xl:h-3/4 sm:aspect-[12/10] lg:w-3/4 lg:aspect-square"
+        className="fixed m-auto flex flex-col max-md:gap-2 justify-between items-center bg-[var(--background)] rounded-xl p-4 w-11/12 sm:w-3/4 lg:w-2/3 xl:w-2/5 xl:h-3/4 sm:aspect-[12/10] lg:aspect-square"
       >
         {/* image & prev-next btn */}
         <div className="flex h-[90%] w-full justify-center items-center">
@@ -41,11 +50,12 @@ const Modal = ({ images, onClose }) => {
             onClick={handlePrev}
           />
           <div className="h-full above-fold:max-lg:w-11/12">
-            <img
-              loading="lazy"
-              src={images[currentIndex]}
+            <LazyImage
+              src={images[currentIndex].path}
               alt="Certificate"
-              className="mx-auto rounded-lg object-contain w-full sm:h-full"
+              height={images[currentIndex].height}
+              width={images[currentIndex].width}
+              className={`mx-auto rounded-lg object-contain w-full sm:h-full lg:px-8`}
             />
           </div>
           <Icon

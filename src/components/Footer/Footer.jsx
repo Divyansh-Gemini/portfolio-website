@@ -1,14 +1,27 @@
 import React from "react";
 import SocialIcon from "./SocialIcon";
-import {
-  siGithub,
-  siHackerrank,
-  siLinkedin,
-  siStackoverflow,
-  siX,
-} from "simple-icons";
+import { siGithub, siLinkedin, siStackoverflow, siX } from "simple-icons";
 
 const Footer = () => {
+  const socials = [
+    {
+      social: siGithub,
+      url: "https://github.com/Divyansh-Gemini",
+    },
+    {
+      social: siLinkedin,
+      url: "https://www.linkedin.com/in/divyansh-gemini/",
+    },
+    {
+      social: siX,
+      url: "https://twitter.com/DivyanshGemini",
+    },
+    {
+      social: siStackoverflow,
+      url: "https://stackoverflow.com/users/19415431/divyansh-gemini",
+    },
+  ];
+
   return (
     // footer
     <footer className="mt-14 border-t-2 border-[var(--gray)] py-8">
@@ -31,23 +44,13 @@ const Footer = () => {
         <div>
           <span className="text-base sm:text-xl">Socials</span>
           <div className="flex gap-3 mt-2">
-            <SocialIcon
-              social={siGithub}
-              url="https://github.com/Divyansh-Gemini"
-            />
-            <SocialIcon
-              social={siLinkedin}
-              url="https://www.linkedin.com/in/divyansh-gemini/"
-            />
-            <SocialIcon social={siX} url="https://twitter.com/DivyanshGemini" />
-            <SocialIcon
-              social={siStackoverflow}
-              url="https://stackoverflow.com/users/19415431/divyansh-gemini"
-            />
-            {/* <SocialIcon
-              social={siHackerrank}
-              url="https://www.hackerrank.com/profile/DivyanshGemini"
-            /> */}
+            {socials.map((social) => (
+              <SocialIcon
+                key={social.url}
+                social={social.social}
+                url={social.url}
+              />
+            ))}
           </div>
         </div>
       </div>

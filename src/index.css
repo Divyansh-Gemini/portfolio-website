@@ -18,10 +18,8 @@
   --white: #ffffff;
 
   /* cursors */
-  --cursor-pointer: url("/assets/images/cursors/cursor-pointer.svg"),
-    pointer;
-  --cursor-default: url("/assets/images/cursors/cursor-default.svg"),
-    default;
+  --cursor-pointer: url("/assets/images/cursors/cursor-pointer.svg"), pointer;
+  --cursor-default: url("/assets/images/cursors/cursor-default.svg"), default;
   --cursor-text: url("/assets/images/cursors/cursor-text.svg"), text;
 }
 
@@ -37,7 +35,7 @@
   background: var(--primary);
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Other Common Styles ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Global Styles ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 * {
   margin: 0;
   padding: 0;

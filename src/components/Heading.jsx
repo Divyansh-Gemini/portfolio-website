@@ -4,7 +4,7 @@ import { mdiRayStartArrow, mdiAlphaQBox } from "@mdi/js";
 import { Link } from "react-scroll";
 import { NavLink } from "react-router-dom";
 
-const Heading = ({ text = "heading", width, viewAll = false }) => {
+const Heading = ({ text = "heading", className = "", viewAll = false }) => {
   return (
     <div id={`${text}`} className="flex items-center mt-20 mb-10">
       {/* main heading text */}
@@ -24,9 +24,7 @@ const Heading = ({ text = "heading", width, viewAll = false }) => {
       </Link>
 
       {/* horizontal line */}
-      <hr
-        className={`border-t-2 border-[var(--primary)] flex-shrink ms-4 w-${width} h-0`}
-      />
+      {/* <hr className={`border-t-2 border-[var(--primary)] ms-4 h-0 ${className}`} /> */}
 
       {/* view all */}
       {viewAll && (

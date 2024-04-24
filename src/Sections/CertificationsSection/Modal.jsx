@@ -1,16 +1,18 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
+import LazyImage from "../../components/LazyImage";
 
-const Modal = ({ imageUrl, onClose }) => {
+const Modal = ({ imageUrl, height, width, onClose }) => {
   const modalRef = useRef(null);
 
-  const handleCloseOutsideClick = (event) => {
+  const closeModal = (event) => {
     if (modalRef.current && !modalRef.current.contains(event.target)) onClose();
+    if (event.key === "Escape") onClose();
   };
 
-  React.useEffect(
-    () => document.addEventListener("mousedown", handleCloseOutsideClick),
-    []
-  );
+  useEffect(() => {
+    document.addEventListener("mousedown", closeModal);
+    document.addEventListener("keydown", closeModal);
+  }, []);
 
   return (
     // overlay
@@ -21,14 +23,16 @@ const Modal = ({ imageUrl, onClose }) => {
       {/* modal card */}
       <div
         ref={modalRef}
-        className="flex flex-col bg-[var(--background)] rounded-xl p-4 w-11/12 sm:w-3/4 xl:w-2/5 sm:aspect-[12/10]"
+        className="flex flex-col bg-[var(--background)] rounded-xl p-4 w-11/12 sm:w-3/4 lg:w-2/3 xl:w-2/5 sm:aspect-[12/10]"
       >
-        {/* certificate image */}
-        <img
-          loading="lazy"
+        <LazyImage
           src={imageUrl}
           alt="Certificate"
-          className="xxxxlg:h-96 xxxxw-fit h-full mx-auto rounded-lg"
+          height={height}
+          width={width}
+          className={`mx-auto rounded-lg ${
+            height > width ? "max-sm:w-full sm:h-full" : "w-full"
+          }`}
         />
 
         {/* close btn */}

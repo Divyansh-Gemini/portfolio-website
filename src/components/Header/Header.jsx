@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import NavItem from "./NavItem";
 import { Link as ScrollLink } from "react-scroll";
 import { Link as RouterLink, useLocation } from "react-router-dom";
@@ -10,6 +10,11 @@ import { siGithub, siLinkedin, siStackoverflow, siX } from "simple-icons";
 const Header = () => {
   const location = useLocation();
   const [isNavVisible, setNavVisible] = useState(false);
+  console.log(isNavVisible);
+
+  useEffect(() => {
+    console.log(isNavVisible);
+  }, [isNavVisible]);
 
   const showNavStopScroll = (navVisible) => {
     setNavVisible(navVisible);
@@ -22,7 +27,7 @@ const Header = () => {
 
   return (
     <header
-      className="sticky top-0 z-20 h-14 lg:h-16 flex items-center justify-around md:justify-between md:w-3/4 mx-auto bg-[var(--background)]
+      className="sticky top-0 z-50 h-14 lg:h-16 flex items-center justify-around md:justify-between md:w-3/4 mx-auto bg-[var(--background)]
       "
       // bg-red-700 above-fold:bg-orange-600 sm:bg-yellow-600 md:bg-green-700 lg:bg-blue-900 xl:bg-purple-900 2xl:bg-pink-950
     >

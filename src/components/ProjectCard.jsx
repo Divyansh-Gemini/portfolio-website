@@ -2,6 +2,7 @@ import React from "react";
 import Button from "./Button";
 import ProjectModal from "./ProjectModal";
 import ReactDOM from "react-dom";
+import LazyImage from "./LazyImage";
 
 const ProjectCard = ({
   title,
@@ -34,7 +35,13 @@ const ProjectCard = ({
         duration-200 ease-in-out hover:-translate-y-1 hover:shadow-lg hover:shadow-gray-900 w-full"
     >
       {/* project banner image */}
-      <img className="rounded-t-2xl" loading="lazy" src={imgSrc} alt={title} />
+      <LazyImage
+        src={imgSrc}
+        alt={title}
+        height={250}
+        width={400}
+        className="rounded-t-2xl w-full"
+      />
 
       {/* tech stack */}
       <div className="flex flex-wrap gap-y-1 gap-x-2 p-2 text-xs above-fold:text-sm md:text-base border-y border-[var(--gray)]">
