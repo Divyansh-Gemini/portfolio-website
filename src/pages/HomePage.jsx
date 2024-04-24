@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
-import HeroSection from "../Sections/HeroSection/HeroSection";
-import ProjectsSection from "../Sections/ProjectsSection/ProjectsSection";
-import SkillsSection from "../Sections/SkillsSection/SkillsSection";
-import CertificationsSection from "../Sections/CertificationsSection/CertificationsSection";
-import ContactSection from "../Sections/ContactSection/ContactSection";
 import { animateScroll } from "react-scroll";
-import AchievementsSection from "../Sections/AchievementsSection/AchievementsSection";
+import HeroSection from "../sections/HeroSection/HeroSection";
+import ProjectsSection from "../sections/ProjectsSection/ProjectsSection";
+import SkillsSection from "../sections/SkillsSection/SkillsSection";
+import CertificationsSection from "../sections/CertificationsSection/CertificationsSection";
+import ContactSection from "../sections/ContactSection/ContactSection";
+import AchievementsSection from "../sections/AchievementsSection/AchievementsSection";
 
 const HomePage = () => {
   animateScroll.scrollToTop();
