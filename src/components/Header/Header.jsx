@@ -10,11 +10,6 @@ import { siGithub, siLinkedin, siStackoverflow, siX } from "simple-icons";
 const Header = () => {
   const location = useLocation();
   const [isNavVisible, setNavVisible] = useState(false);
-  console.log(isNavVisible);
-
-  useEffect(() => {
-    console.log(isNavVisible);
-  }, [isNavVisible]);
 
   const showNavStopScroll = (navVisible) => {
     setNavVisible(navVisible);
