@@ -6,6 +6,7 @@ import { mdiMenu } from "@mdi/js";
 import Icon from "@mdi/react";
 import SocialIcon from "../Footer/SocialIcon";
 import { siGithub, siLinkedin, siStackoverflow, siX } from "simple-icons";
+import data from "../../data/data.json";
 
 const Header = () => {
   const location = useLocation();
@@ -35,11 +36,11 @@ const Header = () => {
           offset={-70}
           duration={500}
         >
-          <span className={logoStyling}>{"{Divyansh Gemini}"}</span>
+          <span className={logoStyling}>{`{${data.general.name}}`}</span>
         </ScrollLink>
       ) : (
         <RouterLink to={"/"}>
-          <span className={logoStyling}>{"{Divyansh Gemini}"}</span>
+          <span className={logoStyling}>{`{${data.general.name}}`}</span>
         </RouterLink>
       )}
 
@@ -98,16 +99,18 @@ const Header = () => {
       >
         <SocialIcon
           social={siGithub}
-          url="https://github.com/Divyansh-Gemini"
+          url={data.socials.gitHub}
         />
         <SocialIcon
           social={siLinkedin}
-          url="https://www.linkedin.com/in/divyansh-gemini/"
+          url={data.socials.linkedIn}
         />
-        <SocialIcon social={siX} url="https://twitter.com/DivyanshGemini" />
+        <SocialIcon
+            social={siX}
+            url={data.socials.x} />
         <SocialIcon
           social={siStackoverflow}
-          url="https://stackoverflow.com/users/19415431/divyansh-gemini"
+          url={data.socials.stackoverflow}
         />
       </div>
     </header>

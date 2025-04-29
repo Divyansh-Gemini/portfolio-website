@@ -1,0 +1,230 @@
+{
+  "general": {
+    "name": "Divyansh Gemini",
+    "title": "Android App Developer",
+    "description": "I craft responsive applications where technology meets creativity.\n",
+    "statusPart1": "Currently working at",
+    "statusPart2": "Mygate",
+    "resumeUrl": "https://drive.google.com/uc?export=download&id=1a-Gr5M8ufCXQuEV_HFDFO5asmdHZ5NAf"
+  },
+  "projects": {
+    "majorProjects": [
+      {
+        "imgSrc": "project-banners/project-portfolio.png",
+        "title": "Portfolio Website",
+        "techStack": ["React.js", "TailwindCSS"],
+        "description": "The website you are currently on.",
+        "codeURL": "https://github.com/Divyansh-Gemini/portfolio-website",
+        "viewContentType": "URL",
+        "viewContent": "https://www.divyanshgemini.dev/",
+        "isFeatured": true
+      },
+      {
+        "imgSrc": "project-banners/project-cic.png",
+        "title": "Pre-Import & Export Inspection Services",
+        "techStack": ["Android", "Java", "Python", "SQLite"],
+        "description": "Android app to digitize making of inspection certifcate by fetching data from Invoice PDF.",
+        "codeURL": "https://github.com/Divyansh-Gemini/pre-import-and-export-inspection-services",
+        "viewContentType": "YouTube",
+        "viewContent": "M812VBoabQE",
+        "isFeatured": true
+      },
+      {
+        "imgSrc": "project-banners/project-careplus.png",
+        "title": "CarePlus",
+        "techStack": ["Android", "Java", "Firebase"],
+        "description": "Android app for caretaker of old-age home to manage & remind medications of the residents.",
+        "codeURL": "https://github.com/Divyansh-Gemini/CarePlus",
+        "isFeatured": true
+      }
+    ],
+
+    "smallProjects": [
+      {
+        "imgSrc": "project-banners/project-fuzionai.png",
+        "title": "FuzionAI",
+        "techStack": ["Android", "Java", "OpenAI API"],
+        "description": "Android app that uses OpenAI's Chat-3.5 Turbo and DALL-E 2.0 models to generate text and images respectively.",
+        "codeURL": "https://github.com/Divyansh-Gemini/FuzionAI"
+      },
+      {
+        "imgSrc": "project-banners/project-ease-my-whatsapp.png",
+        "title": "Ease My WhatsApp",
+        "techStack": ["Android", "Kotlin"],
+        "description": "The user can send WhatsApp message from the app without saving the contact number.",
+        "codeURL": "https://github.com/Divyansh-Gemini/Ease-My-WhatsApp"
+      },
+      {
+        "imgSrc": "project-banners/project-scrape.png",
+        "title": "Scrape Kaviraj Pads",
+        "techStack": ["Python", "BeautifulSoup"],
+        "description": "Scraped 813 pads (spiritual poems) written & sung by Kaviraj Navneet Sanghvi from the website Kaviraj Pad Player and stored them in a CSV file.",
+        "codeURL": "https://github.com/Divyansh-Gemini/Scrape-Kaviraj-Pads"
+      }
+    ]
+  },
+  "skills": [
+    "Android",
+    "Kotlin",
+    "Java",
+    "Python",
+    "Git",
+    "GitHub",
+    "ReactJS",
+    "NextJS",
+    "TailwindCSS",
+    "NodeJS",
+    "Appwrite",
+    "Firebase"
+  ],
+  "experiences": [],
+  "certifications": [
+    {
+      "title": "Machine Learning with Python",
+      "issuer": "IBM",
+      "logo": "logos/logo-ibm.png",
+      "certificate": "certificates/certificate-ml.jpg",
+      "height": 500,
+      "width": 647
+    },
+    {
+      "title": "Fundamentals of Deep Learning",
+      "issuer": "NVIDIA",
+      "logo": "logos/logo-nvidia.png",
+      "certificate": "certificates/certificate-dl.jpg",
+      "height": 650,
+      "width": 459
+    },
+    {
+      "title": "Android App Development",
+      "issuer": "Ainwik Infotech",
+      "logo": "logos/logo-ainwik.png",
+      "certificate": "certificates/certificate-android.jpg",
+      "height": 500,
+      "width": 661
+    },
+    {
+      "title": "Crash Course on Python",
+      "issuer": "Google",
+      "logo": "logos/logo-google.png",
+      "certificate": "certificates/certificate-python.jpg",
+      "height": 500,
+      "width": 647
+    }
+  ],
+  "achievements": [
+    {
+      "title": "1st Position in ForkThis",
+      "subtitle": "(Open-source competition)",
+      "issuer": "Computer Society of India - VIT Chapter",
+      "monthYear": "Sep 2023",
+      "image": "/assets/images/medal-gold.svg",
+      "photos": [
+        {
+          "path": "photos/forkthis-1.png",
+          "height": 283,
+          "width": 400
+        },
+        {
+          "path": "photos/forkthis-2.png",
+          "height": 300,
+          "width": 400
+        },
+        {
+          "path": "photos/forkthis-3.png",
+          "height": 349,
+          "width": 400
+        },
+        {
+          "path": "photos/forkthis-4.png",
+          "height": 349,
+          "width": 400
+        }
+      ]
+    },
+    {
+      "title": "Best Project Award",
+      "subtitle": "in BCA 2nd year",
+      "issuer": "Jagan Institute of Management Studies",
+      "monthYear": "Oct 2022",
+      "image": "/assets/images/trophy.svg",
+      "photos": [
+        {
+          "path": "photos/bpa-1.png",
+          "height": 225,
+          "width": 400
+        },
+        {
+          "path": "photos/bpa-2.png",
+          "height": 225,
+          "width": 400
+        },
+        {
+          "path": "photos/bpa-3.png",
+          "height": 300,
+          "width": 400
+        },
+        {
+          "path": "photos/bpa-4.png",
+          "height": 300,
+          "width": 400
+        }
+      ]
+    },
+    {
+      "title": "3rd Position in IT Quiz",
+      "subtitle": "Sponsored by GFG",
+      "issuer": "TekQbe - JIMS IT CLUB",
+      "monthYear": "Jul 2022",
+      "image": "/assets/images/medal-bronze.svg",
+      "photos": [
+        {
+          "path": "photos/quiz-1.png",
+          "height": 266,
+          "width": 400
+        },
+        {
+          "path": "photos/quiz-2.png",
+          "height": 300,
+          "width": 400
+        },
+        {
+          "path": "photos/quiz-3.png",
+          "height": 300,
+          "width": 400
+        }
+      ]
+    },
+    {
+      "title": "1st Position in Shutter Up",
+      "subtitle": "(Photography)",
+      "issuer": "ARDOUR - The Cultural Club of JIMS",
+      "monthYear": "Nov 2021",
+      "image": "/assets/images/medal-gold.svg",
+      "photos": [
+        {
+          "path": "photos/photography-1.png",
+          "height": 300,
+          "width": 400
+        },
+        {
+          "path": "photos/photography-2.png",
+          "height": 533,
+          "width": 400
+        },
+        {
+          "path": "photos/photography-3.png",
+          "height": 295,
+          "width": 400
+        }
+      ]
+    }
+  ],
+  "socials": {
+    "email": "divyanshhgemini3232@gmail.com",
+    "gitHub": "https://github.com/Divyansh-Gemini",
+    "linkedIn": "https://www.linkedin.com/in/divyansh-gemini/",
+    "x": "https://x.com/DivyanshGemini",
+    "stackoverflow": "https://stackoverflow.com/users/19415431/divyansh-gemini"
+  }
+}

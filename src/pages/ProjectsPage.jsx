@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Heading from "../components/Heading";
 import ProjectCard from "../components/ProjectCard";
 import { animateScroll } from "react-scroll";
-import projects from "../data/projects";
+import data from "../data/data.json";
 
 const ProjectsPage = () => {
   animateScroll.scrollToTop();
@@ -11,8 +11,8 @@ const ProjectsPage = () => {
     document.title = "Divyansh Gemini | Projects";
   }, []);
 
-  const majorProjects = projects.majorProjects;
-  const smallProjects = projects.smallProjects;
+  const majorProjects = data.projects.majorProjects;
+  const smallProjects = data.projects.smallProjects;
 
   return (
     <>

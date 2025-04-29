@@ -1,10 +1,10 @@
 import React from "react";
 import Heading from "../../Heading";
 import ProjectCard from "../../ProjectCard.jsx";
-import projects from "../../../data/projects.json";
+import data from "../../../data/data.json";
 
 const ProjectsSection = () => {
-  const featuredProjects = projects.majorProjects.filter(
+  const featuredProjects = data.projects.majorProjects.filter(
     (project) => project.isFeatured
   );
 

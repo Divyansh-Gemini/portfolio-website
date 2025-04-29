@@ -1,24 +1,25 @@
 import React from "react";
 import SocialIcon from "./SocialIcon";
 import { siGithub, siLinkedin, siStackoverflow, siX } from "simple-icons";
+import data from "../../data/data.json";
 
 const Footer = () => {
   const socials = [
     {
       social: siGithub,
-      url: "https://github.com/Divyansh-Gemini",
+      url: data.socials.gitHub,
     },
     {
       social: siLinkedin,
-      url: "https://www.linkedin.com/in/divyansh-gemini/",
+      url: data.socials.linkedIn,
     },
     {
       social: siX,
-      url: "https://twitter.com/DivyanshGemini",
+      url: data.socials.x,
     },
     {
       social: siStackoverflow,
-      url: "https://stackoverflow.com/users/19415431/divyansh-gemini",
+      url: data.socials.stackoverflow,
     },
   ];
 
@@ -29,14 +30,14 @@ const Footer = () => {
       <div className="flex flex-col gap-6 md:flex-row justify-between w-3/4 mx-auto">
         {/* div: about */}
         <div className="flex flex-col gap-1">
-          <span className="text-base sm:text-xl">Divyansh Gemini</span>
+          <span className="text-base sm:text-xl">{data.general.name}</span>
           <a
             className="text-sm sm:text-base text-[var(--gray)] cursor-[var(--cursor-pointer)] hover:underline"
-            href="mailto:divyanshgemini3232@gmail.com"
+            href={`mailto:${data.socials.email}`}
             target="_blank"
             rel="noopener noreferrer"
           >
-            divyanshgemini3232@gmail.com
+            {data.socials.email}
           </a>
         </div>
 

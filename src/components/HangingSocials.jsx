@@ -1,20 +1,21 @@
 import React from "react";
 import SocialIcon from "./Footer/SocialIcon";
 import { siGithub, siLinkedin, siX } from "simple-icons";
+import data from "../data/data.json";
 
 const HangingSocials = () => {
   const socials = [
     {
       social: siGithub,
-      url: "https://github.com/Divyansh-Gemini",
+      url: data.socials.gitHub,
     },
     {
       social: siLinkedin,
-      url: "https://www.linkedin.com/in/divyansh-gemini/",
+      url: data.socials.linkedIn,
     },
     {
       social: siX,
-      url: "https://twitter.com/DivyanshGemini",
+      url: data.socials.x,
     },
   ];
 
